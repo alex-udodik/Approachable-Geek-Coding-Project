@@ -123,17 +123,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HgU-8Z-bZ2">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HgU-8Z-bZ2">
                                 <rect key="frame" x="139" y="155" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3U1-Sc-yvH" appends="YES" id="jGh-np-bhP"/>
+                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yU4-uv-svk">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yU4-uv-svk">
                                 <rect key="frame" x="238" y="174" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="linkColor"/>
+                                <gestureRecognizers/>
                                 <imageReference key="image" image="pencil" catalog="system" symbolScale="default"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bbP-qg-akz" appends="YES" id="Hp4-kk-4du"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -158,6 +166,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3U1-Sc-yvH">
+                    <connections>
+                        <segue destination="NhT-gC-IXN" kind="show" id="0WD-s8-gqx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bbP-qg-akz">
+                    <connections>
+                        <segue destination="NhT-gC-IXN" kind="show" id="axH-oN-7aV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
         </scene>
@@ -213,11 +231,18 @@
                             <constraint firstItem="TS4-33-axC" firstAttribute="leading" secondItem="mIz-fq-cXi" secondAttribute="leading" constant="45" id="xXc-s8-BdE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ejg-nc-cqH"/>
+                    <navigationItem key="navigationItem" id="ejg-nc-cqH">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="arrowshape.left" catalog="system" id="IA0-fL-ghl">
+                            <connections>
+                                <segue destination="gqS-CL-0ib" kind="unwind" identifier="unWindFromEditAbout" unwindAction="unwindToViewControllerNameHereWithSegue:" id="igg-mh-4MJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05c-iV-FlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gqS-CL-0ib" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1806.8702290076335" y="502.81690140845075"/>
+            <point key="canvasLocation" x="924" y="741"/>
         </scene>
         <!--Edit Email Controller-->
         <scene sceneID="Tgn-Oe-pkn">
@@ -278,11 +303,18 @@
                             <constraint firstItem="SiN-mK-CPF" firstAttribute="trailing" secondItem="D4Y-dJ-kQb" secondAttribute="trailing" constant="157" id="wmK-Q5-cyj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="p5Y-fh-NIM"/>
+                    <navigationItem key="navigationItem" id="p5Y-fh-NIM">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="arrowshape.left" catalog="system" id="7oD-lx-h6o">
+                            <connections>
+                                <segue destination="m6B-Bt-dUg" kind="unwind" identifier="unWindFromEditEmail" unwindAction="unwindToViewControllerNameHereWithSegue:" id="7Nr-AA-te8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZS-eE-Ah7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="m6B-Bt-dUg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2635.8778625954196" y="112.67605633802818"/>
+            <point key="canvasLocation" x="1792" y="574"/>
         </scene>
         <!--Edit Pic Controller-->
         <scene sceneID="KUx-fv-uqn">
@@ -293,7 +325,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload a photo of yourself" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-cd-HKD">
-                                <rect key="frame" x="43" y="59" width="306" height="30"/>
+                                <rect key="frame" x="43" y="103" width="306" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -317,11 +349,18 @@
                             <constraint firstItem="M2l-cd-HKD" firstAttribute="top" secondItem="Qv9-CI-SDL" secondAttribute="top" id="jNK-cp-ksW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ccA-FI-YTF"/>
+                    <navigationItem key="navigationItem" id="ccA-FI-YTF">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="arrowshape.left" catalog="system" id="wZg-7h-LiC">
+                            <connections>
+                                <segue destination="jF7-tA-Dz5" kind="unwind" identifier="unWindFromEditPic" unwindAction="unwindToViewControllerNameHereWithSegue:" id="bkO-0k-jtc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUv-ba-oEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jF7-tA-Dz5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="891" y="-730"/>
+            <point key="canvasLocation" x="923" y="-745"/>
         </scene>
         <!--Edit Name Controller-->
         <scene sceneID="9ts-16-yal">
@@ -412,7 +451,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ft-Is-eav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Yyf-OW-HkS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1791.6030534351144" y="-858.45070422535218"/>
+            <point key="canvasLocation" x="1818" y="-613"/>
         </scene>
         <!--Edit Number Controller-->
         <scene sceneID="9R0-p0-QbS">
@@ -473,11 +512,18 @@
                             <constraint firstItem="1lj-hv-BaW" firstAttribute="bottom" secondItem="IvO-Fs-bqu" secondAttribute="bottom" constant="317" id="v4u-eb-EeF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Y8b-vB-bJs"/>
+                    <navigationItem key="navigationItem" id="Y8b-vB-bJs">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="arrowshape.left" catalog="system" id="eHL-TB-aQP">
+                            <connections>
+                                <segue destination="wcG-oa-Ah0" kind="unwind" identifier="unWindFromEditNumber" unwindAction="unwindToViewControllerNameHereWithSegue:" id="BxQ-1G-4L5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tru-js-CDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wcG-oa-Ah0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2635.8778625954196" y="-594.36619718309862"/>
+            <point key="canvasLocation" x="2587" y="-19"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Pt-mu-scD">
@@ -498,6 +544,9 @@
             <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="axH-oN-7aV"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.left" catalog="system" width="128" height="104"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
