@@ -96,7 +96,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="NhT-gC-IXN" kind="show" id="QQE-1f-gxv"/>
+                                    <segue destination="J7H-NI-yRd" kind="show" id="5Sd-mQ-6Sm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDB-8H-hX6">
@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit About Controller-->
         <scene sceneID="obR-om-jvI">
             <objects>
-                <viewController id="wOF-gt-Pze" sceneMemberID="viewController">
+                <viewController id="wOF-gt-Pze" customClass="EditAboutController" customModule="Approachable_Geek_Coding_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uxG-h8-iCd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="1807" y="503"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Email Controller-->
         <scene sceneID="Tgn-Oe-pkn">
             <objects>
-                <viewController id="17n-hV-vs1" sceneMemberID="viewController">
+                <viewController id="17n-hV-vs1" customClass="EditEmailController" customModule="Approachable_Geek_Coding_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QGy-Lc-BDn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,16 +172,16 @@
             </objects>
             <point key="canvasLocation" x="2636" y="113"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Pic Controller-->
         <scene sceneID="KUx-fv-uqn">
             <objects>
-                <viewController id="NhT-gC-IXN" sceneMemberID="viewController">
+                <viewController id="NhT-gC-IXN" customClass="EditPicController" customModule="Approachable_Geek_Coding_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Buz-Kx-ZfQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload a photo of yourself" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-cd-HKD">
-                                <rect key="frame" x="43" y="103" width="306" height="30"/>
+                                <rect key="frame" x="43" y="59" width="306" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUv-ba-oEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2636" y="-568"/>
+            <point key="canvasLocation" x="891" y="-730"/>
         </scene>
         <!--Edit Name Controller-->
         <scene sceneID="9ts-16-yal">
@@ -294,6 +294,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ft-Is-eav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1791.6030534351144" y="-858.45070422535218"/>
+        </scene>
+        <!--Edit Number Controller-->
+        <scene sceneID="9R0-p0-QbS">
+            <objects>
+                <viewController id="J7H-NI-yRd" customClass="EditNumberController" customModule="Approachable_Geek_Coding_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0sh-B4-uGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1lj-hv-BaW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y8b-vB-bJs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tru-js-CDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2636" y="-594"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Pt-mu-scD">
