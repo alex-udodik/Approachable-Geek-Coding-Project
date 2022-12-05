@@ -38,16 +38,29 @@ class EditProfileHomeController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "segueEditName") { // Check for correct segue
             let controller = segue.destination as! EditNameController
-            var fullName: String? = EditNameLabel.text
-            var arr = fullName?.split(separator: " ")
-        
-        
+            if let fullName = EditNameLabel.text {
+                
+                let arr = fullName.split(separator: " ")
+                controller.firstName = String(arr[0])
+                controller.lastName = String(arr[1])
+                
+            }
         }
         else if (segue.identifier == "segueEditNumber") {
             let controller = segue.destination as! EditNumberController
             var number: String? = EditNumberLabel.text
-            
+            print(number)
             controller.number = number
+        }
+        else if (segue.identifier == "segueEditEmail") {
+            let controller = segue.destination as! EditEmailController
+            var email: String? = EditEmailLabel.text
+            controller.email = email
+        }
+        else if (segue.identifier == "segueEditAbout") {
+            let controller = segue.destination as! EditAboutController
+            var about: String? = EditAboutMeLabel.text
+            controller.about = about;
         }
        
     }

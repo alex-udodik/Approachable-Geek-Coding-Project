@@ -10,9 +10,17 @@ import UIKit
 
 class EditAboutController: UIViewController {
     
+    var about: String?
+
+    @IBOutlet weak var textViewAbout: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        initializeLabel()
+    }
+    
+    func initializeLabel() {
+        self.textViewAbout.text = about
     }
 }

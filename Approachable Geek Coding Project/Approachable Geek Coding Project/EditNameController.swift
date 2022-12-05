@@ -13,10 +13,17 @@ class EditNameController: UIViewController {
     var firstName: String?
     var lastName: String?
     
+    @IBOutlet weak var textFieldLastName: UITextField!
+    @IBOutlet weak var textFieldFirstName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        initializeLabel()
+    }
+    
+    func initializeLabel() {
+        self.textFieldFirstName.text = firstName
+        self.textFieldLastName.text = lastName
     }
     
 }
