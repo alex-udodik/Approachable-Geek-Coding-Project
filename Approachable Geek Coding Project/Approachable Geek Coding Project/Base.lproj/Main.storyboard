@@ -88,7 +88,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="L5c-bL-1jf" kind="show" id="qeD-I6-wtG"/>
+                                    <segue destination="L5c-bL-1jf" kind="show" identifier="segueEditName" id="qeD-I6-wtG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBn-LD-YiL">
@@ -401,9 +401,16 @@
                             <constraint firstItem="Ncr-s2-E4b" firstAttribute="top" secondItem="eGo-fe-wOQ" secondAttribute="bottom" constant="112" id="xbt-dt-hV2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xol-Y0-gKy"/>
+                    <navigationItem key="navigationItem" customizationIdentifier="" id="xol-Y0-gKy">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="arrowshape.left" catalog="system" id="KNw-5B-gCa">
+                            <connections>
+                                <segue destination="Yyf-OW-HkS" kind="unwind" identifier="unWindFromEditName" unwindAction="unwindToViewControllerNameHereWithSegue:" id="TMq-T2-5pY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ft-Is-eav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Yyf-OW-HkS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1791.6030534351144" y="-858.45070422535218"/>
         </scene>
@@ -492,6 +499,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.left" catalog="system" width="128" height="104"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

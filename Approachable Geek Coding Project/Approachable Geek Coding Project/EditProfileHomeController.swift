@@ -28,5 +28,30 @@ class EditProfileHomeController: UIViewController {
         
         circularImageViewProfilePic.layer.cornerRadius = circularImageViewProfilePic.frame.size.width / 2
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "segueEditName") { // Check for correct segue
+            let controller = segue.destination as! EditNameController
+            
+            //pass name into controller labels
+            print("click 123")
+            
+        }
+       
+    }
+    
+    @IBAction func unwindToViewControllerNameHere(segue: UIStoryboardSegue) {
+        
+        if (segue.identifier == "unWindFromEditName") {
+            
+            print("unwinded!")
+            //locationsList = fetchLocations()
+            //tableView.reloadData()
+            
+        }
+        else {
+            print("none")
+        }
+    }
 
 }
