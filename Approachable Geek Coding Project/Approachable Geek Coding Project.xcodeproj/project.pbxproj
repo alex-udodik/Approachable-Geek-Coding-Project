@@ -19,6 +19,10 @@
 		FA881AE2293E83B600B3A334 /* Approachable_Geek_Coding_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA881AE1293E83B600B3A334 /* Approachable_Geek_Coding_ProjectUITestsLaunchTests.swift */; };
 		FACFEE55293E8CD0006D54F5 /* EditProfileHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFEE54293E8CD0006D54F5 /* EditProfileHomeController.swift */; };
 		FACFEE57293E925F006D54F5 /* EditNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFEE56293E925F006D54F5 /* EditNameController.swift */; };
+		FACFEE59293EA00B006D54F5 /* EditPicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFEE58293EA00B006D54F5 /* EditPicController.swift */; };
+		FACFEE5B293EA045006D54F5 /* EditNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFEE5A293EA045006D54F5 /* EditNumberController.swift */; };
+		FACFEE5D293EA060006D54F5 /* EditEmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFEE5C293EA060006D54F5 /* EditEmailController.swift */; };
+		FACFEE5F293EA080006D54F5 /* EditAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFEE5E293EA07F006D54F5 /* EditAboutController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		FA881AE1293E83B600B3A334 /* Approachable_Geek_Coding_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Approachable_Geek_Coding_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FACFEE54293E8CD0006D54F5 /* EditProfileHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileHomeController.swift; sourceTree = "<group>"; };
 		FACFEE56293E925F006D54F5 /* EditNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameController.swift; sourceTree = "<group>"; };
+		FACFEE58293EA00B006D54F5 /* EditPicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPicController.swift; sourceTree = "<group>"; };
+		FACFEE5A293EA045006D54F5 /* EditNumberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNumberController.swift; sourceTree = "<group>"; };
+		FACFEE5C293EA060006D54F5 /* EditEmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmailController.swift; sourceTree = "<group>"; };
+		FACFEE5E293EA07F006D54F5 /* EditAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAboutController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,10 @@
 				FA881AC4293E83B500B3A334 /* Approachable_Geek_Coding_Project.xcdatamodeld */,
 				FACFEE54293E8CD0006D54F5 /* EditProfileHomeController.swift */,
 				FACFEE56293E925F006D54F5 /* EditNameController.swift */,
+				FACFEE58293EA00B006D54F5 /* EditPicController.swift */,
+				FACFEE5A293EA045006D54F5 /* EditNumberController.swift */,
+				FACFEE5C293EA060006D54F5 /* EditEmailController.swift */,
+				FACFEE5E293EA07F006D54F5 /* EditAboutController.swift */,
 			);
 			path = "Approachable Geek Coding Project";
 			sourceTree = "<group>";
@@ -267,11 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACFEE5B293EA045006D54F5 /* EditNumberController.swift in Sources */,
 				FACFEE55293E8CD0006D54F5 /* EditProfileHomeController.swift in Sources */,
 				FA881AC0293E83B500B3A334 /* ViewController.swift in Sources */,
 				FACFEE57293E925F006D54F5 /* EditNameController.swift in Sources */,
 				FA881ABC293E83B500B3A334 /* AppDelegate.swift in Sources */,
 				FA881ABE293E83B500B3A334 /* SceneDelegate.swift in Sources */,
+				FACFEE59293EA00B006D54F5 /* EditPicController.swift in Sources */,
+				FACFEE5F293EA080006D54F5 /* EditAboutController.swift in Sources */,
+				FACFEE5D293EA060006D54F5 /* EditEmailController.swift in Sources */,
 				FA881AC6293E83B500B3A334 /* Approachable_Geek_Coding_Project.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
