@@ -179,8 +179,31 @@
                     <view key="view" contentMode="scaleToFill" id="Buz-Kx-ZfQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload a photo of yourself" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-cd-HKD">
+                                <rect key="frame" x="43" y="103" width="306" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiS-n9-A33">
+                                <rect key="frame" x="79" y="447" width="235" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Update">
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Qv9-CI-SDL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qv9-CI-SDL" firstAttribute="trailing" secondItem="M2l-cd-HKD" secondAttribute="trailing" constant="44" id="Fcr-D8-O47"/>
+                            <constraint firstItem="M2l-cd-HKD" firstAttribute="centerX" secondItem="Buz-Kx-ZfQ" secondAttribute="centerX" id="Po1-S9-pE2"/>
+                            <constraint firstItem="M2l-cd-HKD" firstAttribute="leading" secondItem="Qv9-CI-SDL" secondAttribute="leading" constant="43" id="Wgh-Ds-hXN"/>
+                            <constraint firstItem="M2l-cd-HKD" firstAttribute="top" secondItem="Qv9-CI-SDL" secondAttribute="top" id="jNK-cp-ksW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ccA-FI-YTF"/>
                 </viewController>
