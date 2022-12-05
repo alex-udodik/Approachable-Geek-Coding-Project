@@ -195,14 +195,82 @@
                     <view key="view" contentMode="scaleToFill" id="Iag-LG-ZxY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfF-5v-PhZ">
+                                <rect key="frame" x="79" y="103" width="235" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncr-s2-E4b">
+                                <rect key="frame" x="79" y="447" width="235" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="ylc-Gh-Dd2"/>
+                                    <constraint firstAttribute="height" constant="54" id="ytI-pa-adp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Update">
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ja-fA-rcm">
+                                <rect key="frame" x="79" y="178" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU7-9j-RrR">
+                                <rect key="frame" x="80" y="272" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Djf-pT-YAP">
+                                <rect key="frame" x="79" y="207" width="235" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGo-fe-wOQ">
+                                <rect key="frame" x="79" y="301" width="235" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Z0J-5z-Phr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z0J-5z-Phr" firstAttribute="trailing" secondItem="Ncr-s2-E4b" secondAttribute="trailing" constant="79" id="1JU-fW-uRI"/>
+                            <constraint firstItem="Z0J-5z-Phr" firstAttribute="trailing" secondItem="dfF-5v-PhZ" secondAttribute="trailing" constant="79" id="60q-uv-vsc"/>
+                            <constraint firstItem="QU7-9j-RrR" firstAttribute="top" secondItem="Djf-pT-YAP" secondAttribute="bottom" constant="31" id="9PF-HS-4ks"/>
+                            <constraint firstItem="Djf-pT-YAP" firstAttribute="leading" secondItem="Z0J-5z-Phr" secondAttribute="leading" constant="79" id="ChZ-IB-wdx"/>
+                            <constraint firstItem="Z0J-5z-Phr" firstAttribute="trailing" secondItem="eGo-fe-wOQ" secondAttribute="trailing" constant="79" id="Epo-ec-qEy"/>
+                            <constraint firstItem="Z0J-5z-Phr" firstAttribute="trailing" secondItem="0Ja-fA-rcm" secondAttribute="trailing" constant="231" id="I4d-CT-Cda"/>
+                            <constraint firstItem="eGo-fe-wOQ" firstAttribute="leading" secondItem="Z0J-5z-Phr" secondAttribute="leading" constant="79" id="JRo-nB-xwZ"/>
+                            <constraint firstItem="Z0J-5z-Phr" firstAttribute="trailing" secondItem="QU7-9j-RrR" secondAttribute="trailing" constant="231" id="LRZ-jB-foK"/>
+                            <constraint firstItem="eGo-fe-wOQ" firstAttribute="top" secondItem="QU7-9j-RrR" secondAttribute="bottom" constant="8" symbolic="YES" id="RmY-VZ-tCb"/>
+                            <constraint firstItem="dfF-5v-PhZ" firstAttribute="top" secondItem="Z0J-5z-Phr" secondAttribute="top" id="TIb-Du-xWg"/>
+                            <constraint firstItem="0Ja-fA-rcm" firstAttribute="leading" secondItem="Z0J-5z-Phr" secondAttribute="leading" constant="79" id="Umo-f9-SKZ"/>
+                            <constraint firstItem="0Ja-fA-rcm" firstAttribute="top" secondItem="dfF-5v-PhZ" secondAttribute="bottom" constant="45" id="Xoq-Mh-hIM"/>
+                            <constraint firstItem="Djf-pT-YAP" firstAttribute="top" secondItem="0Ja-fA-rcm" secondAttribute="bottom" constant="8" symbolic="YES" id="YOp-ba-1Ii"/>
+                            <constraint firstItem="Ncr-s2-E4b" firstAttribute="leading" secondItem="Z0J-5z-Phr" secondAttribute="leading" constant="79" id="bUd-8q-LRA"/>
+                            <constraint firstItem="dfF-5v-PhZ" firstAttribute="centerX" secondItem="Iag-LG-ZxY" secondAttribute="centerX" id="htZ-X2-BqX"/>
+                            <constraint firstItem="QU7-9j-RrR" firstAttribute="top" secondItem="Djf-pT-YAP" secondAttribute="bottom" constant="31" id="j8I-QF-MIo"/>
+                            <constraint firstItem="Ncr-s2-E4b" firstAttribute="centerX" secondItem="Iag-LG-ZxY" secondAttribute="centerX" id="lxs-Gl-CgP"/>
+                            <constraint firstItem="dfF-5v-PhZ" firstAttribute="leading" secondItem="Z0J-5z-Phr" secondAttribute="leading" constant="79" id="miS-IU-v8r"/>
+                            <constraint firstItem="Djf-pT-YAP" firstAttribute="top" secondItem="0Ja-fA-rcm" secondAttribute="bottom" constant="8" symbolic="YES" id="q5t-Jv-Dav"/>
+                            <constraint firstItem="Z0J-5z-Phr" firstAttribute="trailing" secondItem="Djf-pT-YAP" secondAttribute="trailing" constant="79" id="qx1-gs-f8g"/>
+                            <constraint firstItem="QU7-9j-RrR" firstAttribute="leading" secondItem="Z0J-5z-Phr" secondAttribute="leading" constant="80" id="rG6-nj-usr"/>
+                            <constraint firstItem="eGo-fe-wOQ" firstAttribute="top" secondItem="QU7-9j-RrR" secondAttribute="bottom" constant="8" symbolic="YES" id="tOH-Wy-Jpw"/>
+                            <constraint firstItem="Ncr-s2-E4b" firstAttribute="top" secondItem="eGo-fe-wOQ" secondAttribute="bottom" constant="112" id="vuc-yH-G1J"/>
+                            <constraint firstItem="Ncr-s2-E4b" firstAttribute="top" secondItem="eGo-fe-wOQ" secondAttribute="bottom" constant="112" id="xbt-dt-hV2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xol-Y0-gKy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ft-Is-eav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="-858"/>
+            <point key="canvasLocation" x="1791.6030534351144" y="-858.45070422535218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Pt-mu-scD">
@@ -227,6 +295,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
