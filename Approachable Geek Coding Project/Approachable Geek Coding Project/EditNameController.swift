@@ -10,15 +10,13 @@ import UIKit
 
 class EditNameController: UIViewController {
     
+    var firstName: String?
+    var lastName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
     }
-    
-    
-   
-    
     
 }

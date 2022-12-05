@@ -97,7 +97,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="J7H-NI-yRd" kind="show" id="5Sd-mQ-6Sm"/>
+                                    <segue destination="J7H-NI-yRd" kind="show" identifier="segueEditNumber" id="5Sd-mQ-6Sm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDB-8H-hX6">
@@ -339,6 +339,14 @@
                                     <color key="baseBackgroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-43-GYl">
+                                <rect key="frame" x="71" y="160" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="NFN-xx-2Ms" appends="YES" id="tds-E9-gct"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qv9-CI-SDL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -359,8 +367,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUv-ba-oEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jF7-tA-Dz5" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="NFN-xx-2Ms"/>
             </objects>
-            <point key="canvasLocation" x="923" y="-745"/>
+            <point key="canvasLocation" x="922.90076335877859" y="-745.07042253521126"/>
         </scene>
         <!--Edit Name Controller-->
         <scene sceneID="9ts-16-yal">
@@ -519,6 +528,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textFieldNumber" destination="GVv-Dc-eVs" id="xRl-KF-LsX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tru-js-CDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="wcG-oa-Ah0" userLabel="Exit" sceneMemberID="exit"/>

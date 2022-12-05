@@ -19,6 +19,9 @@ class EditProfileHomeController: UIViewController {
     @IBOutlet weak var EditNumberLabel: UILabel!
     @IBOutlet weak var EditNameLabel: UILabel!
     
+    var imagePicker = UIImagePickerController()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,15 +30,24 @@ class EditProfileHomeController: UIViewController {
         circularImageViewPen.layer.cornerRadius = circularImageViewPen.frame.size.width / 2
         
         circularImageViewProfilePic.layer.cornerRadius = circularImageViewProfilePic.frame.size.width / 2
+        
+        
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "segueEditName") { // Check for correct segue
             let controller = segue.destination as! EditNameController
+            var fullName: String? = EditNameLabel.text
+            var arr = fullName?.split(separator: " ")
+        
+        
+        }
+        else if (segue.identifier == "segueEditNumber") {
+            let controller = segue.destination as! EditNumberController
+            var number: String? = EditNumberLabel.text
             
-            //pass name into controller labels
-            print("click 123")
-            
+            controller.number = number
         }
        
     }
