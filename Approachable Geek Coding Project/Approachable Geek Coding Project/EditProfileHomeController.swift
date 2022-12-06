@@ -24,14 +24,17 @@ class EditProfileHomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //This rounds the blue trim around the profile pic
         CircularImageView.layer.cornerRadius = CircularImageView.frame.size.width / 2
         
+        //this rounds the little pen icon on the side of the profile pic
         circularImageViewPen.layer.cornerRadius = circularImageViewPen.frame.size.width / 2
         
+        //this rounds the profile pic the user chooses
         circularProfilePic.layer.cornerRadius = circularProfilePic.frame.size.width / 2
     }
     
-    
+    //this will use the current values and use them as a reference when the user is editing.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "segueEditName") { // Check for correct segue
             let controller = segue.destination as! EditNameController
@@ -69,7 +72,7 @@ class EditProfileHomeController: UIViewController {
        
     }
     
-    
+    //This will check the unwind segues and set the newly edited values in the profile page accordingly
     @IBAction func unwindToViewControllerNameHere(segue: UIStoryboardSegue) {
         if let sourceViewController = segue.source as? EditNameController {
             var fullName = "";

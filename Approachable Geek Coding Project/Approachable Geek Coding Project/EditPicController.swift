@@ -20,11 +20,15 @@ class EditPicController: UIViewController,UIImagePickerControllerDelegate, UINav
         initializePic()
     }
     
+    
+    //saves the newly chosen pic
     @IBAction func buttonUpdatePressed(_ sender: Any) {
         if newPic != nil {
             pic = newPic
         }
     }
+    
+    //opens the image viewer selection window
     @IBAction func imageViewPressed(_ sender: Any) {
         var imagePicker = UIImagePickerController()
 
@@ -40,6 +44,7 @@ class EditPicController: UIViewController,UIImagePickerControllerDelegate, UINav
         dismiss(animated: true, completion: nil)
     }
    
+    //sets the newly chosen image into the image view
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerOriginalImage")] as? UIImage {
             self.profilePicUIImageView.image = image
@@ -54,6 +59,7 @@ class EditPicController: UIViewController,UIImagePickerControllerDelegate, UINav
         picker.dismiss(animated: true, completion: nil)
     }
     
+    //sets the image from the main porofile page as a reference
     func initializePic() {
         self.profilePicUIImageView.image = pic
     }
