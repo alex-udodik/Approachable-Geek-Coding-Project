@@ -12,7 +12,7 @@ Clone the github respository and make sure to be on the ```main``` branch.
 Once the project is cloned, navigate within the respository folder. Open the "Approachable-Geek-Coding-Project" folder and find the file called ```Approachable Geek Coding Project.xcodeproj```. This is the file needed to open the Xcode project workspace. Open the file and Xcode should open.
 
 ### **Running the project**
-### Once Xcode has been open and has finished loading, navigate to the emulator selection.
+Once Xcode has been open and has finished loading, navigate to the emulator selection.
 
 ![Screenshot](emulator_menu.png)
 
