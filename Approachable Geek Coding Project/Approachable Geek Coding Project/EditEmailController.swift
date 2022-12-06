@@ -14,6 +14,10 @@ class EditEmailController: UIViewController {
 
     @IBOutlet weak var textFieldEmail: UITextField!
     
+    @IBAction func buttonUpdatePressed(_ sender: Any) {
+        email = self.textFieldEmail.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

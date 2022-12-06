@@ -67,8 +67,6 @@ class EditProfileHomeController: UIViewController {
     
     
     @IBAction func unwindToViewControllerNameHere(segue: UIStoryboardSegue) {
-        
-        
         if let sourceViewController = segue.source as? EditNameController {
             var fullName = "";
             if let first = sourceViewController.firstName {
@@ -77,10 +75,25 @@ class EditProfileHomeController: UIViewController {
             if let last = sourceViewController.lastName {
                 fullName.append(last)
             }
-            
             self.EditNameLabel.text = String(fullName)
         }
         
+        else if let sourceViewController = segue.source as? EditNumberController {
+            if let number = sourceViewController.number {
+                self.EditNumberLabel.text = String(number)
+            }
+        }
+        
+        else if let sourceViewController = segue.source as? EditEmailController {
+            if let email = sourceViewController.email {
+                self.EditEmailLabel.text = String(email)
+            }
+        }
+        
+        else if let sourceViewController = segue.source as? EditAboutController {
+            if let about = sourceViewController.about {
+                self.EditAboutMeLabel.text = String(about)
+            }
+        }
     }
-
 }

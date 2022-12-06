@@ -14,6 +14,9 @@ class EditNumberController: UIViewController {
 
     @IBOutlet weak var textFieldNumber: UITextField!
     
+    @IBAction func buttonUpdatePressed(_ sender: Any) {
+        number = self.textFieldNumber.text
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -14,6 +14,10 @@ class EditAboutController: UIViewController {
 
     @IBOutlet weak var textViewAbout: UITextView!
     
+    @IBAction func buttonUpdatePressed(_ sender: Any) {
+        about = self.textViewAbout.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
