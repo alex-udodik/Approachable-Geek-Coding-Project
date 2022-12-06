@@ -11,7 +11,7 @@ import UIKit
 class EditPicController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var pic: UIImage?
-
+    var newPic: UIImage?
     
     @IBOutlet weak var profilePicUIImageView: UIImageView!
     override func viewDidLoad() {
@@ -20,6 +20,11 @@ class EditPicController: UIViewController,UIImagePickerControllerDelegate, UINav
         initializePic()
     }
     
+    @IBAction func buttonUpdatePressed(_ sender: Any) {
+        if newPic != nil {
+            pic = newPic
+        }
+    }
     @IBAction func imageViewPressed(_ sender: Any) {
         var imagePicker = UIImagePickerController()
 
@@ -38,12 +43,12 @@ class EditPicController: UIViewController,UIImagePickerControllerDelegate, UINav
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerOriginalImage")] as? UIImage {
             self.profilePicUIImageView.image = image
-            pic = image
+            newPic = image
         }
         
         if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
             self.profilePicUIImageView.image = image
-            pic = image
+            newPic = image
         }
         
         picker.dismiss(animated: true, completion: nil)

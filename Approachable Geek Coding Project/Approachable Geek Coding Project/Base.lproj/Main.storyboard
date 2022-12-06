@@ -390,6 +390,7 @@
                                     <color key="baseBackgroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="buttonUpdatePressed:" destination="NhT-gC-IXN" eventType="touchUpInside" id="MD7-bk-5Ph"/>
                                     <segue destination="jF7-tA-Dz5" kind="unwind" unwindAction="unwindToViewControllerNameHereWithSegue:" id="Xij-Hl-aIh"/>
                                 </connections>
                             </button>
