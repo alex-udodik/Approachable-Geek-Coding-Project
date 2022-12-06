@@ -12,15 +12,14 @@ class EditProfileHomeController: UIViewController {
 
     @IBOutlet weak var CircularImageView: UIImageView!
     @IBOutlet weak var circularImageViewPen: UIImageView!
-    @IBOutlet weak var circularImageViewProfilePic: UIImageView!
     
     @IBOutlet weak var EditAboutMeLabel: UILabel!
     @IBOutlet weak var EditEmailLabel: UILabel!
     @IBOutlet weak var EditNumberLabel: UILabel!
     @IBOutlet weak var EditNameLabel: UILabel!
     
-    var imagePicker = UIImagePickerController()
-
+    @IBOutlet weak var circularProfilePic: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +28,7 @@ class EditProfileHomeController: UIViewController {
         
         circularImageViewPen.layer.cornerRadius = circularImageViewPen.frame.size.width / 2
         
-        circularImageViewProfilePic.layer.cornerRadius = circularImageViewProfilePic.frame.size.width / 2
-        
-        
+        circularProfilePic.layer.cornerRadius = circularProfilePic.frame.size.width / 2
     }
     
     
@@ -60,7 +57,14 @@ class EditProfileHomeController: UIViewController {
         else if (segue.identifier == "segueEditAbout") {
             let controller = segue.destination as! EditAboutController
             var about: String? = EditAboutMeLabel.text
-            controller.about = about;
+            controller.about = about
+        }
+        
+        else if (segue.identifier == "segueEditPic") {
+            let controller = segue.destination as! EditPicController
+            var pic: UIImage? = circularProfilePic.image
+            controller.pic = pic
+            
         }
        
     }
@@ -93,6 +97,12 @@ class EditProfileHomeController: UIViewController {
         else if let sourceViewController = segue.source as? EditAboutController {
             if let about = sourceViewController.about {
                 self.EditAboutMeLabel.text = String(about)
+            }
+        }
+        
+        else if let soureViewController = segue.source as? EditPicController {
+            if let pic = soureViewController.pic {
+                self.circularProfilePic.image = pic
             }
         }
     }
