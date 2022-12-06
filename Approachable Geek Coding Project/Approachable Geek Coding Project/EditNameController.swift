@@ -26,4 +26,9 @@ class EditNameController: UIViewController {
         self.textFieldLastName.text = lastName
     }
     
+    @IBAction func buttonUpdatePressed(_ sender: Any) {
+        
+        firstName = self.textFieldFirstName.text
+        lastName = self.textFieldLastName.text
+    }
 }

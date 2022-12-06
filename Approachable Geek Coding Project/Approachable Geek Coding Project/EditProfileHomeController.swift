@@ -65,18 +65,22 @@ class EditProfileHomeController: UIViewController {
        
     }
     
+    
     @IBAction func unwindToViewControllerNameHere(segue: UIStoryboardSegue) {
         
-        if (segue.identifier == "unWindFromEditName") {
+        
+        if let sourceViewController = segue.source as? EditNameController {
+            var fullName = "";
+            if let first = sourceViewController.firstName {
+                fullName.append(first + " ")
+            }
+            if let last = sourceViewController.lastName {
+                fullName.append(last)
+            }
             
-            print("unwinded!")
-            //locationsList = fetchLocations()
-            //tableView.reloadData()
-            
+            self.EditNameLabel.text = String(fullName)
         }
-        else {
-            print("none")
-        }
+        
     }
 
 }
