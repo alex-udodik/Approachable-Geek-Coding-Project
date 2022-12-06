@@ -213,6 +213,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonUpdatePressed:" destination="wOF-gt-Pze" eventType="touchUpInside" id="FoQ-96-gbA"/>
+                                    <segue destination="gqS-CL-0ib" kind="unwind" unwindAction="unwindToViewControllerNameHereWithSegue:" id="sow-u9-h6C"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -288,6 +289,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonUpdatePressed:" destination="17n-hV-vs1" eventType="touchUpInside" id="ieO-nV-PYZ"/>
+                                    <segue destination="m6B-Bt-dUg" kind="unwind" unwindAction="unwindToViewControllerNameHereWithSegue:" id="4WX-M6-qOz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -350,6 +352,9 @@
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                     <color key="baseBackgroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="jF7-tA-Dz5" kind="unwind" unwindAction="unwindToViewControllerNameHereWithSegue:" id="Xij-Hl-aIh"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-43-GYl">
                                 <rect key="frame" x="71" y="160" width="250" height="250"/>
@@ -410,6 +415,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonUpdatePressed:" destination="L5c-bL-1jf" eventType="touchUpInside" id="8CS-Aq-wSJ"/>
+                                    <segue destination="Yyf-OW-HkS" kind="unwind" unwindAction="unwindToViewControllerNameHereWithSegue:" id="XU1-58-9Da"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ja-fA-rcm">
@@ -508,6 +514,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonUpdatePressed:" destination="J7H-NI-yRd" eventType="touchUpInside" id="dta-VG-r6l"/>
+                                    <segue destination="wcG-oa-Ah0" kind="unwind" unwindAction="unwindToViewControllerNameHereWithSegue:" id="KQ2-nU-jo3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrH-OC-gUp">
