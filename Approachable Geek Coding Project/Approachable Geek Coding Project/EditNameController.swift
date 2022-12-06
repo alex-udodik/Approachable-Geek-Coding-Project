@@ -21,10 +21,12 @@ class EditNameController: UIViewController {
         initializeLabel()
     }
     
+    //sets first and last name from the main profile page as a reference
     func initializeLabel() {
         self.textFieldFirstName.text = firstName
         self.textFieldLastName.text = lastName
     }
+    
     
     @IBAction func buttonUpdatePressed(_ sender: Any) {
         

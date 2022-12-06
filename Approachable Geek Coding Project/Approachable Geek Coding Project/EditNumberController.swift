@@ -23,6 +23,7 @@ class EditNumberController: UIViewController {
         initializeLabel()
     }
     
+    //sets the number from the main profile page as a reference
     func initializeLabel() {
         self.textFieldNumber.text = number
     }

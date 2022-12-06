@@ -23,6 +23,7 @@ class EditAboutController: UIViewController {
         initializeLabel()
     }
     
+    //Sets the about me text from the main profile page as reference
     func initializeLabel() {
         self.textViewAbout.text = about
     }

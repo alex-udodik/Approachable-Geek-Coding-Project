@@ -24,6 +24,7 @@ class EditEmailController: UIViewController {
         initializeLabel()
     }
     
+    //sets the email from the main profile page as a reference
     func initializeLabel() {
         self.textFieldEmail.text = email
     }
