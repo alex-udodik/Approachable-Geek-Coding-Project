@@ -24,3 +24,5 @@ Once Xcode has been open and has finished loading, navigate to the emulator sele
 
 ### On a successful launch, the emulator should look something like this:
 ![Screenshot](emulator_running_2.png)
+
+### Notes: Cropping an image works flawlessly on a real device.
