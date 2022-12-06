@@ -41,6 +41,11 @@ class EditPicController: UIViewController,UIImagePickerControllerDelegate, UINav
             pic = image
         }
         
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
+            self.profilePicUIImageView.image = image
+            pic = image
+        }
+        
         picker.dismiss(animated: true, completion: nil)
     }
     

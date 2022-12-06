@@ -13,11 +13,11 @@ class EditProfileHomeController: UIViewController {
     @IBOutlet weak var CircularImageView: UIImageView!
     @IBOutlet weak var circularImageViewPen: UIImageView!
     
-    @IBOutlet weak var EditAboutMeLabel: UILabel!
     @IBOutlet weak var EditEmailLabel: UILabel!
     @IBOutlet weak var EditNumberLabel: UILabel!
     @IBOutlet weak var EditNameLabel: UILabel!
     
+    @IBOutlet weak var EditAboutMeLabel: UITextView!
     @IBOutlet weak var circularProfilePic: UIImageView!
     
     
