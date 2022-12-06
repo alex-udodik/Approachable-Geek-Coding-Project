@@ -20,7 +20,6 @@ class EditAboutController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         initializeLabel()
     }
     
