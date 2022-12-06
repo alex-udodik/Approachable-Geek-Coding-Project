@@ -23,4 +23,4 @@ Once Xcode has been open and has finished loading, navigate to the emulator sele
 ![Screenshot](run.png)
 
 ### On a successful launch, the emulator should look something like this:
-![Screenshot](emulator_running.png)
+![Screenshot](emulator_running_2.png)
