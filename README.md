@@ -3,7 +3,7 @@
 
 
 ### **Installation**
-You will need a MacOS computer running Xcode. I used an M1 MacBook Air
+You will need a MacOS computer running Xcode. I used an M1 MacBook Air.
 This project was built entirely in the latest version of **Xcode Version 14.1 (14B47b)**
 
 
